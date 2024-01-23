@@ -134,7 +134,7 @@ body {
 
 .progress {
   height: inherit;
-  width: 40%;
+  width: 0%;
   background-color: #fe8daa;
   transition: width 0.1s linear ease-in;
 }
