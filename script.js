@@ -14,4 +14,19 @@ let songIndex = 2;
 
 loadSong(songs[songIndex]);
 
-
+function loadSong(song) {
+    title.innerText = song;
+  
+    audio.src = `music/${song}.mp3`;
+    cover.src = `images/${song}.jpg`;
+  }
+  
+  playBtn.addEventListener("click", () => {
+    const isPlaying = musicContainer.classList.contains("play");
+  
+    if (isPlaying) {
+      pauseSong();
+    } else {
+      playSong();
+    }
+  });
